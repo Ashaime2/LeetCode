@@ -1,0 +1,44 @@
+# ═══════════════════════════════════════════════════════
+#  Problem  : 0088. Merge Sorted Array
+#  URL      : https://leetcode.com/problems/merge-sorted-array/
+#  Difficulty : Easy
+#  Language : Python
+#  Runtime  : 0 ms
+#  Memory   : 12.4 MB
+#  Solved   : July 16, 2026
+# ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def merge(self, nums1, m, nums2, n):
+        """
+        :type nums1: List[int]
+        :type m: int
+        :type nums2: List[int]
+        :type n: int
+        :rtype: None
+        """
+
+        if n == 0:
+            pass
+
+        L = []
+        i = 0
+        j = 0
+
+        while i < m and j < n:
+            if nums1[i] <= nums2[j]:
+                L.append(nums1[i])
+                i += 1
+            else:
+                L.append(nums2[j])
+                j += 1
+
+        while i < m:
+            L.append(nums1[i])
+            i += 1
+
+        while j < n:
+            L.append(nums2[j])
+            j += 1
+
+        nums1[:] = L
