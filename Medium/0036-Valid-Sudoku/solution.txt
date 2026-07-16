@@ -1,0 +1,35 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0036. Valid Sudoku
+//  URL      : https://leetcode.com/problems/valid-sudoku/
+//  Difficulty : Medium
+//  Language : chooseatype
+//  Solved   : July 16, 2026
+// ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def isValidSudoku(self, board):
+        """
+        :type board: List[List[str]]
+        :rtype: bool
+        """
+        # Row verif :
+        for L in board :
+            L = [x for x in L if x!="."]
+            if not len(L) == len(set(L)) :
+                return False
+        
+        # Col verif :
+        for i in range(9) :
+            col = [board[row][i] for row in range(9) if board[row][i] != "."]
+            if not len(col) == len(set(col)) :
+                return False
+
+        # Square verif :
+        for i in range(0,9,3) :
+            for j in range(0,9,3) :
+                square = [x for row in board[i:i+3] for x in row[j:j+3]]
+                square = [x for x in square if x!="."]
+                if not len(square) == len(set(square)) :
+                    return False
+        
+        return True
