@@ -1,6 +1,6 @@
 // ═══════════════════════════════════════════════════════
 //  Problem  : 0037. Sudoku Solver
-//  URL      : https://leetcode.com/problems/sudoku-solver/
+//  URL      : https://leetcode.com/problems/sudoku-solver/submissions/2070445290/
 //  Difficulty : Hard
 //  Language : chooseatype
 //  Solved   : July 17, 2026
@@ -136,4 +136,69 @@ class Solution(object):
                 if not modification:
                     break
 
-        solveur()
+        def test():
+            # Commence par appliquer toutes les déductions certaines
+            solveur()
+
+            # Détecte une contradiction :
+            # une case vide ne possède plus aucun candidat
+            for i in range(9):
+                for j in range(9):
+                    if board[i][j] == "." and len(dico[(i, j)]) == 0:
+                        return False
+
+            # Plus aucune case vide : la grille est résolue
+            if not any("." in row for row in board):
+                return True
+
+            # Choisit la case vide ayant le moins de candidats
+            test_i, test_j = min(
+                (
+                    (i, j)
+                    for i in range(9)
+                    for j in range(9)
+                    if board[i][j] == "."
+                ),
+                key=lambda position: len(dico[position]),
+            )
+
+            candidats = list(dico[(test_i, test_j)])
+
+            # Sauvegarde l'état avant les essais
+            sauvegarde_board = [row[:] for row in board]
+            sauvegarde_dico = {
+                position: valeurs.copy()
+                for position, valeurs in dico.items()
+            }
+
+            for num in candidats:
+                # Restaure l'état initial avant chaque nouvel essai
+                for i in range(9):
+                    board[i][:] = sauvegarde_board[i]
+
+                dico.clear()
+                dico.update({
+                    position: valeurs.copy()
+                    for position, valeurs in sauvegarde_dico.items()
+                })
+
+                # Essaie le candidat
+                attribuer(num, test_i, test_j)
+
+                # Explore récursivement la conséquence de cet essai
+                if test():
+                    return True
+
+            # Aucun candidat ne fonctionne : restauration avant de remonter
+            for i in range(9):
+                board[i][:] = sauvegarde_board[i]
+
+            dico.clear()
+            dico.update({
+                position: valeurs.copy()
+                for position, valeurs in sauvegarde_dico.items()
+            })
+
+            return False
+
+        test()
