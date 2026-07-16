@@ -1,10 +1,10 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0037. Sudoku Solver
-#  URL      : https://leetcode.com/problems/sudoku-solver/submissions/2070445843/
+#  URL      : https://leetcode.com/problems/sudoku-solver/submissions/2070446253/
 #  Difficulty : Hard
 #  Language : Python
-#  Runtime  : 911 ms
-#  Memory   : 12.7 MB
+#  Runtime  : 912 ms
+#  Memory   : 12.6 MB
 #  Solved   : July 17, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -158,38 +158,26 @@ class Solution(object):
 
             # Sauvegarde l'état avant les essais
             sauvegarde_board = [row[:] for row in board]
-            sauvegarde_dico = {
-                position: valeurs.copy()
-                for position, valeurs in dico.items()
-            }
+            sauvegarde_dico = {position: valeurs.copy() for position, valeurs in dico.items()}
 
             for num in candidats:
-                # Restaure l'état initial avant chaque nouvel essai
+                # Restaure l'état initial
                 for i in range(9):
                     board[i][:] = sauvegarde_board[i]
 
                 dico.clear()
-                dico.update({
-                    position: valeurs.copy()
-                    for position, valeurs in sauvegarde_dico.items()
-                })
+                dico.update({position: valeurs.copy() for position, valeurs in sauvegarde_dico.items()})
 
-                # Essaie le candidat
                 attribuer(num, test_i, test_j)
 
-                # Explore récursivement la conséquence de cet essai
                 if test():
                     return True
 
-            # Aucun candidat ne fonctionne : restauration avant de remonter
             for i in range(9):
                 board[i][:] = sauvegarde_board[i]
 
             dico.clear()
-            dico.update({
-                position: valeurs.copy()
-                for position, valeurs in sauvegarde_dico.items()
-            })
+            dico.update({position: valeurs.copy() for position, valeurs in sauvegarde_dico.items()})
 
             return False
 
