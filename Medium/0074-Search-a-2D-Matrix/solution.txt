@@ -1,6 +1,6 @@
 // ═══════════════════════════════════════════════════════
 //  Problem  : 0074. Search a 2D Matrix
-//  URL      : https://leetcode.com/problems/search-a-2d-matrix/
+//  URL      : https://leetcode.com/problems/search-a-2d-matrix/submissions/2070363567/
 //  Difficulty : Medium
 //  Language : chooseatype
 //  Solved   : July 16, 2026
@@ -20,7 +20,4 @@ class Solution(object):
         targ_row = 0
         while target > matrix[targ_row][-1] :
             targ_row += 1
-        if target in matrix[targ_row] :
-            return True
-        else : 
-            return False
+        return target in matrix[targ_row]
