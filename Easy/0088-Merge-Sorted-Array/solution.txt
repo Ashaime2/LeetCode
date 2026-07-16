@@ -17,13 +17,11 @@ class Solution(object):
         """
 
         if n == 0:
-            return
+            pass
 
-        L = []
-        i = 0
-        j = 0
+        L, i, j = [], 0, 0
 
-        while i < m and j < n:
+        while i<m and j<n:
             if nums1[i] <= nums2[j]:
                 L.append(nums1[i])
                 i += 1
