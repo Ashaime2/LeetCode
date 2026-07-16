@@ -4,7 +4,7 @@
 #  Difficulty : Medium
 #  Language : Python
 #  Runtime  : 0 ms
-#  Memory   : 12.3 MB
+#  Memory   : 12.6 MB
 #  Solved   : July 16, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -15,7 +15,8 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        if target in matrix :
-            return True
-        else :
+        for i in range(len(matrix)) :
+            if target in matrix[i] :
+                return True
+        else : 
             return False
