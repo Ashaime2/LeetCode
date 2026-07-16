@@ -1,10 +1,10 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0074. Search a 2D Matrix
-#  URL      : https://leetcode.com/problems/search-a-2d-matrix/
+#  URL      : https://leetcode.com/problems/search-a-2d-matrix/submissions/2070363567/
 #  Difficulty : Medium
 #  Language : Python
 #  Runtime  : 0 ms
-#  Memory   : 12.4 MB
+#  Memory   : 12.7 MB
 #  Solved   : July 16, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -22,7 +22,4 @@ class Solution(object):
         targ_row = 0
         while target > matrix[targ_row][-1] :
             targ_row += 1
-        if target in matrix[targ_row] :
-            return True
-        else : 
-            return False
+        return target in matrix[targ_row]
