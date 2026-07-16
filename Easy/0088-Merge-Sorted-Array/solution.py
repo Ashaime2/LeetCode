@@ -1,10 +1,10 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0088. Merge Sorted Array
-#  URL      : https://leetcode.com/problems/merge-sorted-array/
+#  URL      : https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/
 #  Difficulty : Easy
 #  Language : Python
 #  Runtime  : 0 ms
-#  Memory   : 12.4 MB
+#  Memory   : 12.3 MB
 #  Solved   : July 16, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -21,23 +21,20 @@ class Solution(object):
         if n == 0:
             pass
 
-        L = []
-        i = 0
-        j = 0
+        L, i, j = [], 0, 0
 
-        while i < m and j < n:
+        while i<m and j<n:
             if nums1[i] <= nums2[j]:
                 L.append(nums1[i])
-                i += 1
+                i+=1
             else:
                 L.append(nums2[j])
-                j += 1
+                j+=1
 
-        while i < m:
+        while i<m:
             L.append(nums1[i])
-            i += 1
-
-        while j < n:
+            i+=1
+        while j<n:
             L.append(nums2[j])
             j += 1
 
