@@ -4,10 +4,10 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-19-blue?style=flat-square)
-![Easy](https://img.shields.io/badge/Easy-9-brightgreen?style=flat-square)
-![Medium](https://img.shields.io/badge/Medium-8-yellow?style=flat-square)
-![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
+![Total](https://img.shields.io/badge/Total-11-blue?style=flat-square)
+![Easy](https://img.shields.io/badge/Easy-5-brightgreen?style=flat-square)
+![Medium](https://img.shields.io/badge/Medium-5-yellow?style=flat-square)
+![Hard](https://img.shields.io/badge/Hard-1-red?style=flat-square)
 
 | # | Problem | Difficulty | Language | Solved |
 |---|---------|------------|----------|--------|
