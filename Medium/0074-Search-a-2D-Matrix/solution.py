@@ -20,7 +20,7 @@ class Solution(object):
             return False
         n = len(matrix[0])
         targ_row = 0
-        while target > matrix[targ_row+1][0] :
+        while target > matrix[targ_row][-1] :
             targ_row += 1
         if target in matrix[targ_row] :
             return True
