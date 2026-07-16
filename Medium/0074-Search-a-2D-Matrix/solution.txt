@@ -1,0 +1,27 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0074. Search a 2D Matrix
+//  URL      : https://leetcode.com/problems/search-a-2d-matrix/
+//  Difficulty : Medium
+//  Language : chooseatype
+//  Solved   : July 16, 2026
+// ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def searchMatrix(self, matrix, target):
+        """
+        :type matrix: List[List[int]]
+        :type target: int
+        :rtype: bool
+        """
+        m = len(matrix)
+        if target < matrix[0][0] or target > matrix[-1][-1] or m==0 :
+            return False
+        n = len(matrix[0])
+        targ_row = 0
+        while target > matrix[targ_row+1][0] :
+            targ_row += 1
+        if not target in matrix[targ_row] :
+            return False
+        else :
+            return True
+        
