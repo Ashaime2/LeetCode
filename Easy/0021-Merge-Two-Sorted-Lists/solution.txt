@@ -1,0 +1,52 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0021. Merge Two Sorted Lists
+//  URL      : https://leetcode.com/problems/merge-two-sorted-lists/
+//  Difficulty : Easy
+//  Language : chooseatype
+//  Solved   : July 16, 2026
+// ═══════════════════════════════════════════════════════
+
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def mergeTwoLists(self, list1, list2):
+        """
+        :type list1: Optional[ListNode]
+        :type list2: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
+        curr = None
+        comp = None
+        mem = None
+        head = None
+
+        if list1 is None:
+            return list2
+
+        if list2 is None:
+            return list1
+
+        if list1.val <= list2.val :
+            head, curr, comp = list1, list1, list2
+        else :
+            head, curr, comp = list2, list2, list1
+
+
+        while curr is not None and comp is not None :
+            if curr.next is None :
+                curr.next = comp
+                break
+            if curr.next.val <= comp.val:
+                curr = curr.next
+            else:
+                mem = comp.next
+                comp.next = curr.next
+                curr.next = comp
+
+                curr = comp
+                comp = mem
+
+        return head
