@@ -1,10 +1,10 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0037. Sudoku Solver
-#  URL      : https://leetcode.com/problems/sudoku-solver/
+#  URL      : https://leetcode.com/problems/sudoku-solver/submissions/2070445843/
 #  Difficulty : Hard
 #  Language : Python
-#  Runtime  : 0 ms
-#  Memory   : 12.5 MB
+#  Runtime  : 911 ms
+#  Memory   : 12.7 MB
 #  Solved   : July 17, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -139,30 +139,20 @@ class Solution(object):
                     break
 
         def test():
-            # Commence par appliquer toutes les déductions certaines
             solveur()
 
-            # Détecte une contradiction :
             # une case vide ne possède plus aucun candidat
             for i in range(9):
                 for j in range(9):
                     if board[i][j] == "." and len(dico[(i, j)]) == 0:
                         return False
 
-            # Plus aucune case vide : la grille est résolue
+            # Plus aucune case vide 
             if not any("." in row for row in board):
                 return True
 
-            # Choisit la case vide ayant le moins de candidats
-            test_i, test_j = min(
-                (
-                    (i, j)
-                    for i in range(9)
-                    for j in range(9)
-                    if board[i][j] == "."
-                ),
-                key=lambda position: len(dico[position]),
-            )
+            # ase vide ayant le moins de candidats
+            test_i, test_j = min(((i, j) for i in range(9) for j in range(9) if board[i][j] == "."), key=lambda position: len(dico[position]),)
 
             candidats = list(dico[(test_i, test_j)])
 
