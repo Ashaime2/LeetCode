@@ -12,5 +12,5 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
-        num = str(x)
-        return num == num[::-1]
+        n = str(x)
+        return n == n[::-1]
