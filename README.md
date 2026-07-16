@@ -4,10 +4,10 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-14-blue?style=flat-square)
+![Total](https://img.shields.io/badge/Total-15-blue?style=flat-square)
 ![Easy](https://img.shields.io/badge/Easy-5-brightgreen?style=flat-square)
 ![Medium](https://img.shields.io/badge/Medium-8-yellow?style=flat-square)
-![Hard](https://img.shields.io/badge/Hard-1-red?style=flat-square)
+![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
 
 | # | Problem | Difficulty | Language | Solved |
 |---|---------|------------|----------|--------|
@@ -19,6 +19,7 @@
 | 0036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | 🟡 Medium | `Python` | Jul 16, 2026 |
 | 0036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | 🟡 Medium | `chooseatype` | Jul 16, 2026 |
 | 0037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | 🔴 Hard | `Python` | Jul 17, 2026 |
+| 0037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | 🔴 Hard | `chooseatype` | Jul 17, 2026 |
 | 0073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/submissions/2070349701/) | 🟡 Medium | `chooseatype` | Jul 16, 2026 |
 | 0073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 🟡 Medium | `Python` | Jul 16, 2026 |
 | 0074 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/submissions/2070363567/) | 🟡 Medium | `Python` | Jul 16, 2026 |
@@ -27,4 +28,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Thu, 16 Jul 2026 22:27:26 GMT*
+*Last updated: Thu, 16 Jul 2026 22:30:52 GMT*
