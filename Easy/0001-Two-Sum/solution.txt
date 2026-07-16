@@ -1,0 +1,22 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0001. Two Sum
+//  URL      : https://leetcode.com/problems/two-sum/submissions/2070107391/
+//  Difficulty : Easy
+//  Language : chooseatype
+//  Solved   : July 16, 2026
+// ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        dico = {}
+        for i,elt in enumerate(nums) :
+            complement = target - elt
+            if complement in dico :
+                return [dico[complement],i]
+            else : 
+                dico[elt]=i
