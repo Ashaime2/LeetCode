@@ -4,7 +4,7 @@
 #  Difficulty : Medium
 #  Language : Python
 #  Runtime  : 0 ms
-#  Memory   : 12.6 MB
+#  Memory   : 12.4 MB
 #  Solved   : July 16, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -15,8 +15,14 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        for i in range(len(matrix)) :
-            if target in matrix[i] :
-                return True
+        m = len(matrix)
+        if target < matrix[0][0] or target > matrix[-1][-1] or m==0 :
+            return False
+        n = len(matrix[0])
+        targ_row = 0
+        while target > matrix[targ_row+1][0] :
+            targ_row += 1
+        if target in matrix[targ_row] :
+            return True
         else : 
             return False
