@@ -1,0 +1,36 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0014. Longest Common Prefix
+//  URL      : https://leetcode.com/problems/longest-common-prefix/
+//  Difficulty : Easy
+//  Language : chooseatype
+//  Solved   : July 17, 2026
+// ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def longestCommonPrefix(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+        n = len(strs)
+
+        if n == 0 :
+            return ''
+        if n == 1 :
+            return strs[0]
+
+        strs = sorted(strs, key=len)
+        string = strs[0][0]
+        i = 0
+        while i <= len(strs[0]) :
+            for elt in strs :
+                if elt[:i+1] != string :
+                    if i == 0 :
+                        return ''
+                    else :
+                        return string[:-1] 
+            i+=1
+            string += strs[0][i]
+        return string
+
+
