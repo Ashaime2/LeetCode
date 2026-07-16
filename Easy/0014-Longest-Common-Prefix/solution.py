@@ -15,24 +15,14 @@ class Solution(object):
         :rtype: str
         """
         n = len(strs)
-
-        if n == 0 :
-            return ''
-        if n == 1 :
-            return strs[0]
-
         strs = sorted(strs, key=len)
-        string = strs[0][0]
-        i = 0
-        while i <= len(strs[0]) :
+
+        string = ''
+        for  i in range(n):
+            test = strs[0][i]
             for elt in strs :
-                if elt[:i] != string :
-                    if i == 0 :
-                        return ''
-                    else :
-                        return string[:-1] 
-            i+=1
-            string += strs[0][i]
-        return string
+                if elt[i]!=test :
+                    return string
+            string += test
 
 
