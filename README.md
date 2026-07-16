@@ -4,9 +4,9 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-8-blue?style=flat-square)
+![Total](https://img.shields.io/badge/Total-9-blue?style=flat-square)
 ![Easy](https://img.shields.io/badge/Easy-5-brightgreen?style=flat-square)
-![Medium](https://img.shields.io/badge/Medium-3-yellow?style=flat-square)
+![Medium](https://img.shields.io/badge/Medium-4-yellow?style=flat-square)
 ![Hard](https://img.shields.io/badge/Hard-0-red?style=flat-square)
 
 | # | Problem | Difficulty | Language | Solved |
@@ -17,8 +17,9 @@
 | 0018 | [4Sum](https://leetcode.com/problems/4sum/submissions/2070109090/) | 🟡 Medium | `Python` | Jul 16, 2026 |
 | 0021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 🟢 Easy | `chooseatype` | Jul 16, 2026 |
 | 0073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 🟡 Medium | `chooseatype` | Jul 16, 2026 |
+| 0073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 🟡 Medium | `Python` | Jul 16, 2026 |
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `chooseatype` | Jul 16, 2026 |
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Thu, 16 Jul 2026 17:39:55 GMT*
+*Last updated: Thu, 16 Jul 2026 19:18:14 GMT*
