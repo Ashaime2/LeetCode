@@ -10,64 +10,62 @@
 
 class Solution(object):
     def solveSudoku(self, board):
-        """
-        :type board: List[List[str]]
-        :rtype: None Do not return anything, modify board in-place instead.
-        """
         def loc_square(i, j):
             return (i // 3) * 3, (j // 3) * 3
 
-        
         def verif_ligne(num, i):
             return num not in board[i]
 
         def verif_col(num, j):
             return all(board[row][j] != num for row in range(9))
 
-        def verif_square(num, i, j) :
-            k,l = loc_square(i,j)
-            square = [x for row in board[k:k+3] for x in row[l:l+3]]
-            if num in square :
-                return False
-            return True
-        
+        def verif_square(num, i, j):
+            k, l = loc_square(i, j)
+
+            square = [
+                x
+                for row in board[k:k + 3]
+                for x in row[l:l + 3]
+            ]
+
+            return num not in square
+
         dico = {}
+
         for i in range(9):
             for j in range(9):
                 if board[i][j] != ".":
                     dico[(i, j)] = {board[i][j]}
                 else:
                     dico[(i, j)] = set()
+
                     for num in map(str, range(1, 10)):
-                        if (verif_ligne(num, i) and verif_col(num, j) and verif_square(num, i, j)):
+                        if (
+                            verif_ligne(num, i)
+                            and verif_col(num, j)
+                            and verif_square(num, i, j)
+                        ):
                             dico[(i, j)].add(num)
 
-        def verif_case(num, i, j) :
-            if verif_ligne(num, i) and verif_col(num, j) and verif_square(num, i, j) and board[i][j] == ".":
-                dico[(i,j)].add(num)
-            if board[i][j] != "." :
-                dico[(i,j)].add(board[i][j])
+        def eliminer(num, i, j):
+            for k in range(9):
+                dico[(k, j)].discard(num)
+                dico[(i, k)].discard(num)
 
-        for num in range(1,10) :
-            for i in range(9) :
-                for j in range(9) :
-                    verif_case(str(num),i,j)
+            start_i, start_j = loc_square(i, j)
 
-        def eliminer(num, i, j) :
-            for k in range(9) :
-                dico[(k,j)].discard(num)
-                dico[(i,k)].discard(num)
-            k,l = loc_square(i,j)
-            for a in range(3) :
-                for b in range(3) :
-                    dico[(k+a,l+b)].discard(num)
+            for a in range(3):
+                for b in range(3):
+                    dico[(start_i + a, start_j + b)].discard(num)
 
         def attribuer(num, i, j):
             if board[i][j] != ".":
                 return False
+
             board[i][j] = num
             eliminer(num, i, j)
             dico[(i, j)] = {num}
+
             return True
 
         def solveur():
@@ -75,47 +73,134 @@ class Solution(object):
                 modification = False
 
                 # Une seule possibilité dans une case
-                for key in dico:
-                    i, j = key
+                for (i, j), candidats in dico.items():
+                    if len(candidats) == 1 and board[i][j] == ".":
+                        num = next(iter(candidats))
 
-                    if len(dico[key]) == 1 and board[i][j] == ".":
-                        num = next(iter(dico[key]))
-                        if attribuer(num, i, j) :
+                        if attribuer(num, i, j):
                             modification = True
 
                 # Un chiffre possible dans une seule case d'une ligne
                 for i in range(9):
                     for num in map(str, range(1, 10)):
-                        positions = [(i, j) for j in range(9) if num in dico[(i, j)] and board[i][j] == "."]
+                        positions = [
+                            (i, j)
+                            for j in range(9)
+                            if board[i][j] == "."
+                            and num in dico[(i, j)]
+                        ]
+
                         if len(positions) == 1:
                             row, col = positions[0]
-                            if attribuer(num, row, col) :
+
+                            if attribuer(num, row, col):
                                 modification = True
 
                 # Un chiffre possible dans une seule case d'une colonne
                 for j in range(9):
                     for num in map(str, range(1, 10)):
-                        positions = [(i, j) for i in range(9) if num in dico[(i, j)] and board[i][j] == "."]
+                        positions = [
+                            (i, j)
+                            for i in range(9)
+                            if board[i][j] == "."
+                            and num in dico[(i, j)]
+                        ]
+
                         if len(positions) == 1:
                             row, col = positions[0]
-                            attribuer(num, row, col)
-                            if attribuer(num, row, col) :
+
+                            if attribuer(num, row, col):
                                 modification = True
 
                 # Un chiffre possible dans une seule case d'un carré
-                for i in range(3) :
-                    for j in range(3):
-                        for num in map(str, range(1,10)):
+                for block_i in range(3):
+                    for block_j in range(3):
+                        for num in map(str, range(1, 10)):
                             positions = []
+
                             for k in range(3):
                                 for l in range(3):
-                                    if num in dico[(i*3+k,j*3+l)] and board[i * 3 + k][j * 3 + l] == "." :
-                                        positions.append((i*3+k,j*3+l))
-                            if len(positions) == 1 :
+                                    row = block_i * 3 + k
+                                    col = block_j * 3 + l
+
+                                    if (
+                                        board[row][col] == "."
+                                        and num in dico[(row, col)]
+                                    ):
+                                        positions.append((row, col))
+
+                            if len(positions) == 1:
                                 row, col = positions[0]
-                                if attribuer(num, row, col) :
+
+                                if attribuer(num, row, col):
                                     modification = True
-                        
 
                 if not modification:
                     break
+
+        def test():
+            # Commence par appliquer toutes les déductions certaines
+            solveur()
+
+            # Détecte une contradiction :
+            # une case vide ne possède plus aucun candidat
+            for i in range(9):
+                for j in range(9):
+                    if board[i][j] == "." and len(dico[(i, j)]) == 0:
+                        return False
+
+            # Plus aucune case vide : la grille est résolue
+            if not any("." in row for row in board):
+                return True
+
+            # Choisit la case vide ayant le moins de candidats
+            test_i, test_j = min(
+                (
+                    (i, j)
+                    for i in range(9)
+                    for j in range(9)
+                    if board[i][j] == "."
+                ),
+                key=lambda position: len(dico[position]),
+            )
+
+            candidats = list(dico[(test_i, test_j)])
+
+            # Sauvegarde l'état avant les essais
+            sauvegarde_board = [row[:] for row in board]
+            sauvegarde_dico = {
+                position: valeurs.copy()
+                for position, valeurs in dico.items()
+            }
+
+            for num in candidats:
+                # Restaure l'état initial avant chaque nouvel essai
+                for i in range(9):
+                    board[i][:] = sauvegarde_board[i]
+
+                dico.clear()
+                dico.update({
+                    position: valeurs.copy()
+                    for position, valeurs in sauvegarde_dico.items()
+                })
+
+                # Essaie le candidat
+                attribuer(num, test_i, test_j)
+
+                # Explore récursivement la conséquence de cet essai
+                if test():
+                    return True
+
+            # Aucun candidat ne fonctionne : restauration avant de remonter
+            for i in range(9):
+                board[i][:] = sauvegarde_board[i]
+
+            dico.clear()
+            dico.update({
+                position: valeurs.copy()
+                for position, valeurs in sauvegarde_dico.items()
+            })
+
+            return False
+
+        test()
