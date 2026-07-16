@@ -1,0 +1,33 @@
+# ═══════════════════════════════════════════════════════
+#  Problem  : 0073. Set Matrix Zeroes
+#  URL      : https://leetcode.com/problems/set-matrix-zeroes/
+#  Difficulty : Medium
+#  Language : Python
+#  Runtime  : 0 ms
+#  Memory   : 12.4 MB
+#  Solved   : July 16, 2026
+# ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def setZeroes(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: None Do not return anything, modify matrix in-place instead.
+        """
+        rows, cols = set(), set()
+
+        if len(matrix)==0 :
+            return
+        m, n = len(matrix), len(matrix[0])
+        for i in range(m) : 
+            for j in range(n) :
+                if matrix[i][j] == 0 :
+                    if not i in rows :
+                        rows.add(i)
+                    if not j in cols :
+                        cols.add(j)
+        for row in rows :
+            matrix[row] = [0] * len(matrix[row])
+        for col in cols :
+            for elt in range(m) : 
+                matrix[elt][col] = 0
