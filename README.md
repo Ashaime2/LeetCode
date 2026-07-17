@@ -4,8 +4,8 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-24-blue?style=flat-square)
-![Easy](https://img.shields.io/badge/Easy-12-brightgreen?style=flat-square)
+![Total](https://img.shields.io/badge/Total-25-blue?style=flat-square)
+![Easy](https://img.shields.io/badge/Easy-13-brightgreen?style=flat-square)
 ![Medium](https://img.shields.io/badge/Medium-10-yellow?style=flat-square)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
 
@@ -24,6 +24,7 @@
 | 0014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/submissions/2070454257/) | 🟢 Easy | `chooseatype` | Jul 17, 2026 |
 | 0018 | [4Sum](https://leetcode.com/problems/4sum/submissions/2070109090/) | 🟡 Medium | `Python` | Jul 16, 2026 |
 | 0020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | `Python` | Jul 17, 2026 |
+| 0020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/submissions/2071105402/) | 🟢 Easy | `chooseatype` | Jul 17, 2026 |
 | 0021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 🟢 Easy | `chooseatype` | Jul 16, 2026 |
 | 0036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | 🟡 Medium | `Python` | Jul 16, 2026 |
 | 0036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | 🟡 Medium | `chooseatype` | Jul 16, 2026 |
@@ -37,4 +38,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Fri, 17 Jul 2026 12:34:34 GMT*
+*Last updated: Fri, 17 Jul 2026 12:40:42 GMT*
