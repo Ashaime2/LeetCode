@@ -36,9 +36,8 @@ class Solution(object):
                 if dico[s[i]] < dico[s[i+1]] :
                     num += dico[s[i+1]] - dico[s[i]]
                     flag = True
-                else :
-                    num += dico[s[i]]
-            else :
-                num += dico[s[i]]
-        
+                    continue
+
+            num += dico[s[i]]
+       
         return num
