@@ -4,9 +4,9 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-20-blue?style=flat-square)
+![Total](https://img.shields.io/badge/Total-21-blue?style=flat-square)
 ![Easy](https://img.shields.io/badge/Easy-9-brightgreen?style=flat-square)
-![Medium](https://img.shields.io/badge/Medium-9-yellow?style=flat-square)
+![Medium](https://img.shields.io/badge/Medium-10-yellow?style=flat-square)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
 
 | # | Problem | Difficulty | Language | Solved |
@@ -15,6 +15,7 @@
 | 0002 | [0](https://leetcode.com/problems/add-two-numbers/submissions/2070106680/) | 🟢 Easy | `unknown` | Jul 16, 2026 |
 | 0002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/submissions/2070108343/) | 🟡 Medium | `Python` | Jul 16, 2026 |
 | 0003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 Medium | `chooseatype` | Jul 17, 2026 |
+| 0003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 Medium | `Python` | Jul 17, 2026 |
 | 0009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/submissions/2070448280/) | 🟢 Easy | `Python` | Jul 17, 2026 |
 | 0009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 🟢 Easy | `chooseatype` | Jul 17, 2026 |
 | 0014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/submissions/2070454257/) | 🟢 Easy | `Python` | Jul 17, 2026 |
@@ -33,4 +34,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Fri, 17 Jul 2026 10:50:41 GMT*
+*Last updated: Fri, 17 Jul 2026 11:04:43 GMT*
