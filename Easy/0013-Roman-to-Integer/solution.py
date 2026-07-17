@@ -1,10 +1,10 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0013. Roman to Integer
-#  URL      : https://leetcode.com/problems/roman-to-integer/
+#  URL      : https://leetcode.com/problems/roman-to-integer/submissions/2071084414/
 #  Difficulty : Easy
 #  Language : Python
-#  Runtime  : 0 ms
-#  Memory   : 12.3 MB
+#  Runtime  : 9 ms
+#  Memory   : 12.4 MB
 #  Solved   : July 17, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -37,8 +37,9 @@ class Solution(object):
             if i < n-1 :
                 if dico[s[i]] < dico[s[i+1]] :
                     num += dico[s[i+1]] - dico[s[i]]
+                    flag = True
                     continue
-
+                    
             num += dico[s[i]]
         
         return num
