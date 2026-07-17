@@ -9,18 +9,15 @@
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         n = len(s)
-        maximum = 0
+        lon = 0
+        fenetre = [] 
         idx = 0
 
-        while idx < n:
-            caracteres = []
+        while idx < n :
+            fenetre = s[idx : idx + lon + 1]
             i = 0
-
-            while idx + i < n and s[idx + i] not in caracteres:
-                caracteres.append(s[idx + i])
-                maximum = max(maximum, len(caracteres))
-                i += 1
-
+            while lon + idx + i <= n and s[lon + idx + i] not in fenetre :
+                lon = len(fenetre)
+                i+=1
             idx += 1
-
-        return maximum
+        return lon
