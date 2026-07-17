@@ -4,9 +4,9 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-27-blue?style=flat-square)
+![Total](https://img.shields.io/badge/Total-28-blue?style=flat-square)
 ![Easy](https://img.shields.io/badge/Easy-13-brightgreen?style=flat-square)
-![Medium](https://img.shields.io/badge/Medium-12-yellow?style=flat-square)
+![Medium](https://img.shields.io/badge/Medium-13-yellow?style=flat-square)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
 
 | # | Problem | Difficulty | Language | Solved |
@@ -22,6 +22,7 @@
 | 0013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/submissions/2071086531/) | 🟢 Easy | `chooseatype` | Jul 17, 2026 |
 | 0014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/submissions/2070454257/) | 🟢 Easy | `Python` | Jul 17, 2026 |
 | 0014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/submissions/2070454257/) | 🟢 Easy | `chooseatype` | Jul 17, 2026 |
+| 0017 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | 🟡 Medium | `Python` | Jul 18, 2026 |
 | 0018 | [4Sum](https://leetcode.com/problems/4sum/submissions/2070109090/) | 🟡 Medium | `Python` | Jul 16, 2026 |
 | 0019 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 🟡 Medium | `Python` | Jul 18, 2026 |
 | 0019 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/2071609238/) | 🟡 Medium | `chooseatype` | Jul 18, 2026 |
@@ -40,4 +41,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Fri, 17 Jul 2026 22:42:36 GMT*
+*Last updated: Fri, 17 Jul 2026 23:07:44 GMT*
