@@ -4,8 +4,8 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-30-blue?style=flat-square)
-![Easy](https://img.shields.io/badge/Easy-14-brightgreen?style=flat-square)
+![Total](https://img.shields.io/badge/Total-31-blue?style=flat-square)
+![Easy](https://img.shields.io/badge/Easy-15-brightgreen?style=flat-square)
 ![Medium](https://img.shields.io/badge/Medium-14-yellow?style=flat-square)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
 
@@ -31,6 +31,7 @@
 | 0020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/submissions/2071105402/) | 🟢 Easy | `chooseatype` | Jul 17, 2026 |
 | 0021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 🟢 Easy | `chooseatype` | Jul 16, 2026 |
 | 0026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 🟢 Easy | `chooseatype` | Jul 18, 2026 |
+| 0026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/2071623345/) | 🟢 Easy | `Python` | Jul 18, 2026 |
 | 0036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | 🟡 Medium | `Python` | Jul 16, 2026 |
 | 0036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | 🟡 Medium | `chooseatype` | Jul 16, 2026 |
 | 0037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/submissions/2070446253/) | 🔴 Hard | `Python` | Jul 17, 2026 |
@@ -43,4 +44,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Fri, 17 Jul 2026 23:43:04 GMT*
+*Last updated: Fri, 17 Jul 2026 23:44:00 GMT*
