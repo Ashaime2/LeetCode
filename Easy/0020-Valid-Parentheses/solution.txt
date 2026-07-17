@@ -1,0 +1,29 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0020. Valid Parentheses
+//  URL      : https://leetcode.com/problems/valid-parentheses/submissions/2071105402/
+//  Difficulty : Easy
+//  Language : chooseatype
+//  Solved   : July 17, 2026
+// ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def isValid(self, s):
+        fermants = {
+            ')': '(',
+            ']': '[',
+            '}': '{'
+        }
+
+        pile = []
+
+        for char in s:
+            if char not in fermants:
+                pile.append(char)
+            else:
+                if not pile:
+                    return False
+
+                if pile.pop() != fermants[char]:
+                    return False
+
+        return not pile
