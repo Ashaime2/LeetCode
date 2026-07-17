@@ -1,10 +1,10 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0013. Roman to Integer
-#  URL      : https://leetcode.com/problems/roman-to-integer/submissions/2071048855/
+#  URL      : https://leetcode.com/problems/roman-to-integer/
 #  Difficulty : Easy
 #  Language : Python
-#  Runtime  : 16 ms
-#  Memory   : 12.4 MB
+#  Runtime  : 0 ms
+#  Memory   : 12.3 MB
 #  Solved   : July 17, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -14,61 +14,31 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        n = len(s)
         num = 0
+        n = len(s)
+
+        dico = {
+            'M' : 1000,
+            'D' : 500,
+            'C' : 100,
+            'L' : 50,
+            'X' : 10,
+            'V' : 5,
+            'I' : 1
+        }
+
         flag = False
-        
+
         for i in range(n) :
             if flag :
-                flag = False 
+                flag = False
                 continue
 
-            if s[i] == 'M' :
-                num += 1000
+            if i < n-1 :
+                if dico[s[i]] < dico[s[i+1]] :
+                    num += dico[s[i+1]] - dico[s[i]]
+                    continue
 
-            elif s[i] == 'D' :
-                num += 500
-
-            elif s[i] == 'C' :
-                if i<n-1 :
-                    if s[i+1] == 'M' :
-                        num += 900
-                        flag = True
-                        continue
-                    elif s[i+1] == 'D' :
-                        num += 400
-                        flag = True
-                        continue
-                num += 100
-
-            elif s[i] == 'L' :
-                num += 50
-
-            elif s[i] == 'X' :
-                if i<n-1 :
-                    if s[i+1] == 'C' :
-                        num += 90
-                        flag = True
-                        continue
-                    elif s[i+1] == 'L' :
-                        num += 40
-                        flag = True
-                        continue
-                num += 10
-
-            elif s[i] == 'V' :
-                num += 5
-
-            elif s[i] == 'I' :
-                if i<n-1 :
-                    if s[i+1] == 'X' :
-                        num += 9
-                        flag = True
-                        continue
-                    elif s[i+1] == 'V' :
-                        num += 4
-                        flag = True
-                        continue
-                num += 1
-
+            num += dico[s[i]]
+        
         return num
