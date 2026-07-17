@@ -1,9 +1,9 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0013. Roman to Integer
-#  URL      : https://leetcode.com/problems/roman-to-integer/submissions/2071084414/
+#  URL      : https://leetcode.com/problems/roman-to-integer/submissions/2071086207/
 #  Difficulty : Easy
 #  Language : Python
-#  Runtime  : 9 ms
+#  Runtime  : 24 ms
 #  Memory   : 12.4 MB
 #  Solved   : July 17, 2026
 # ═══════════════════════════════════════════════════════
@@ -39,7 +39,7 @@ class Solution(object):
                     num += dico[s[i+1]] - dico[s[i]]
                     flag = True
                     continue
-                    
+
             num += dico[s[i]]
-        
+       
         return num
