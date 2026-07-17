@@ -14,7 +14,7 @@
 | 0001 | [Two Sum](https://leetcode.com/problems/two-sum/submissions/2070107391/) | 🟢 Easy | `chooseatype` | Jul 16, 2026 |
 | 0002 | [0](https://leetcode.com/problems/add-two-numbers/submissions/2070106680/) | 🟢 Easy | `unknown` | Jul 16, 2026 |
 | 0002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/submissions/2070108343/) | 🟡 Medium | `Python` | Jul 16, 2026 |
-| 0003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 Medium | `chooseatype` | Jul 17, 2026 |
+| 0003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/2071031535/) | 🟡 Medium | `chooseatype` | Jul 17, 2026 |
 | 0003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/2071031535/) | 🟡 Medium | `Python` | Jul 17, 2026 |
 | 0009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/submissions/2070448280/) | 🟢 Easy | `Python` | Jul 17, 2026 |
 | 0009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 🟢 Easy | `chooseatype` | Jul 17, 2026 |
@@ -34,4 +34,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Fri, 17 Jul 2026 11:09:18 GMT*
+*Last updated: Fri, 17 Jul 2026 11:09:40 GMT*
