@@ -1,0 +1,25 @@
+# ═══════════════════════════════════════════════════════
+#  Problem  : 0003. Longest Substring Without Repeating Characters
+#  URL      : https://leetcode.com/problems/longest-substring-without-repeating-characters/
+#  Difficulty : Medium
+#  Language : Python
+#  Runtime  : 0 ms
+#  Memory   : 12.3 MB
+#  Solved   : July 17, 2026
+# ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        n = len(s)
+        lon = 0
+        fenetre = [] 
+        idx = 0
+
+        while idx < n :
+            fenetre = s[idx : idx + lon + 1]
+            i = 0
+            while lon + idx + i <= n and s[lon + idx + i] not in fenetre :
+                lon = len(fenetre)
+                i+=1
+            idx += 1
+        return lon
