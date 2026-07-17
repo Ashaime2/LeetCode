@@ -19,7 +19,7 @@
 | 0009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/submissions/2070448280/) | 🟢 Easy | `Python` | Jul 17, 2026 |
 | 0009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 🟢 Easy | `chooseatype` | Jul 17, 2026 |
 | 0013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/submissions/2071048855/) | 🟢 Easy | `Python` | Jul 17, 2026 |
-| 0013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/submissions/2071048075/) | 🟢 Easy | `chooseatype` | Jul 17, 2026 |
+| 0013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | `chooseatype` | Jul 17, 2026 |
 | 0014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/submissions/2070454257/) | 🟢 Easy | `Python` | Jul 17, 2026 |
 | 0014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/submissions/2070454257/) | 🟢 Easy | `chooseatype` | Jul 17, 2026 |
 | 0018 | [4Sum](https://leetcode.com/problems/4sum/submissions/2070109090/) | 🟡 Medium | `Python` | Jul 16, 2026 |
@@ -36,4 +36,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Fri, 17 Jul 2026 11:29:49 GMT*
+*Last updated: Fri, 17 Jul 2026 11:30:50 GMT*
