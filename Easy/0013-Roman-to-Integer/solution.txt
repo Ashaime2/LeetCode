@@ -12,61 +12,33 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        n = len(s)
         num = 0
+        n = len(s)
+
+        dico = {
+            'M' : 1000,
+            'D' : 500,
+            'C' : 100,
+            'L' : 50,
+            'X' : 10,
+            'V' : 5,
+            'I' : 1
+        }
+
         flag = False
-        
+
         for i in range(n) :
             if flag :
-                flag = False 
+                flag = False
                 continue
 
-            if s[i] == 'M' :
-                num += 1000
-
-            elif s[i] == 'D' :
-                num += 500
-
-            elif s[i] == 'C' :
-                if i<n-1 :
-                    if s[i+1] == 'M' :
-                        num += 900
-                        flag = True
-                        continue
-                    elif s[i+1] == 'D' :
-                        num += 400
-                        flag = True
-                        continue
-                num += 100
-
-            elif s[i] == 'L' :
-                num += 50
-
-            elif s[i] == 'X' :
-                if i<n-1 :
-                    if s[i+1] == 'C' :
-                        num += 90
-                        flag = True
-                        continue
-                    elif s[i+1] == 'L' :
-                        num += 40
-                        flag = True
-                        continue
-                num += 10
-
-            elif s[i] == 'V' :
-                num += 5
-
-            elif s[i] == 'I' :
-                if i<n-1 :
-                    if s[i+1] == 'X' :
-                        num += 9
-                        flag = True
-                        continue
-                    elif s[i+1] == 'V' :
-                        num += 4
-                        flag = True
-                        continue
-                num += 1
-
+            if i < n-1 :
+                if dico[s[i]] < dico[s[i+1]] :
+                    num += dico[s[i+1]] - dico[s[i]]
+                    flag = True
+                else :
+                    num += dico[s[i]]
+            else :
+                num += dico[s[i]]
+        
         return num
