@@ -4,7 +4,7 @@
 #  Difficulty : Medium
 #  Language : Python
 #  Runtime  : 0 ms
-#  Memory   : 12.3 MB
+#  Memory   : 12.4 MB
 #  Solved   : July 17, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -18,7 +18,8 @@ class Solution(object):
         while idx < n :
             fenetre = s[idx : idx + lon + 1]
             i = 0
-            while lon + idx + i <= n and s[lon + idx + i] not in fenetre :
+            while lon + idx + i < n and s[lon + idx + i] not in fenetre :
+                fenetre += s[lon+idx+i]
                 lon = len(fenetre)
                 i+=1
             idx += 1
