@@ -1,0 +1,20 @@
+# ═══════════════════════════════════════════════════════
+#  Problem  : 0027. Remove Element
+#  URL      : https://leetcode.com/problems/remove-element/submissions/2072093375/
+#  Difficulty : Easy
+#  Language : Python
+#  Runtime  : 0 ms
+#  Memory   : 12.4 MB
+#  Solved   : July 18, 2026
+# ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def removeElement(self, nums, val):
+        i = 0
+
+        for num in range(len(nums)):
+            if nums[num] != val:
+                nums[i] = nums[num]
+                i += 1
+
+        return i
