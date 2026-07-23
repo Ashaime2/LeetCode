@@ -1,9 +1,9 @@
 // ═══════════════════════════════════════════════════════
 //  Problem  : 0027. Remove Element
-//  URL      : https://leetcode.com/problems/remove-element/submissions/2072093375/
+//  URL      : https://leetcode.com/problems/plus-one/description/
 //  Difficulty : Easy
 //  Language : unknown
-//  Solved   : July 18, 2026
+//  Solved   : July 23, 2026
 // ═══════════════════════════════════════════════════════
 
 class Solution(object):
