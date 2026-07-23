@@ -1,10 +1,10 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0067. Add Binary
-#  URL      : https://leetcode.com/problems/add-binary/submissions/2078691041/
+#  URL      : https://leetcode.com/problems/add-binary/submissions/2078692275/
 #  Difficulty : Easy
 #  Language : Python
-#  Runtime  : 16 ms
-#  Memory   : 12.2 MB
+#  Runtime  : 10 ms
+#  Memory   : 12.3 MB
 #  Solved   : July 23, 2026
 # ═══════════════════════════════════════════════════════
 
