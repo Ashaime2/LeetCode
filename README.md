@@ -34,7 +34,7 @@
 | 0026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/2071623345/) | 🟢 Easy | `Python` | Jul 18, 2026 |
 | 0027 | [Remove Element](https://leetcode.com/problems/remove-element/submissions/2072093375/) | 🟢 Easy | `Python` | Jul 18, 2026 |
 | 0027 | [Remove Element](https://leetcode.com/problems/remove-element/submissions/2072093375/) | 🟢 Easy | `chooseatype` | Jul 18, 2026 |
-| 0027 | [Remove Element](https://leetcode.com/problems/remove-element/submissions/2072093375/) | 🟢 Easy | `unknown` | Jul 18, 2026 |
+| 0027 | [Remove Element](https://leetcode.com/problems/plus-one/description/) | 🟢 Easy | `unknown` | Jul 23, 2026 |
 | 0036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | 🟡 Medium | `Python` | Jul 16, 2026 |
 | 0036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | 🟡 Medium | `chooseatype` | Jul 16, 2026 |
 | 0037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/submissions/2070446253/) | 🔴 Hard | `Python` | Jul 17, 2026 |
@@ -47,4 +47,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Sat, 18 Jul 2026 16:35:51 GMT*
+*Last updated: Thu, 23 Jul 2026 16:33:00 GMT*
