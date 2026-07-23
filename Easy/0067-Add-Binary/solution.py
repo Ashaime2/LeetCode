@@ -1,10 +1,10 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0067. Add Binary
-#  URL      : https://leetcode.com/problems/add-binary/submissions/2078689585/
+#  URL      : https://leetcode.com/problems/add-binary/submissions/2078691041/
 #  Difficulty : Easy
 #  Language : Python
-#  Runtime  : 14 ms
-#  Memory   : 12.4 MB
+#  Runtime  : 16 ms
+#  Memory   : 12.2 MB
 #  Solved   : July 23, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -21,14 +21,6 @@ class Solution(object):
         n = len(a)
         m = len(b)
         
-        if n == 1 and m == 1 :
-            if a == '1' and b == '1' :
-                return '10'
-            elif (a == '1' and b == '0') or (b == '1' and a == '0') :
-                return '1'
-            elif a == '0' and b == '0' :
-                return '0'
-
         if m != n :
             if n > m :
                 b = '0' * (n-m) + b
