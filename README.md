@@ -39,7 +39,7 @@
 | 0036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | 🟡 Medium | `chooseatype` | Jul 16, 2026 |
 | 0037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/submissions/2070446253/) | 🔴 Hard | `Python` | Jul 17, 2026 |
 | 0037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/submissions/2070446253/) | 🔴 Hard | `chooseatype` | Jul 17, 2026 |
-| 0067 | [Add Binary](https://leetcode.com/problems/add-binary/submissions/2078691041/) | 🟢 Easy | `Python` | Jul 23, 2026 |
+| 0067 | [Add Binary](https://leetcode.com/problems/add-binary/submissions/2078692275/) | 🟢 Easy | `Python` | Jul 23, 2026 |
 | 0067 | [Add Binary](https://leetcode.com/problems/add-binary/submissions/2078691041/) | 🟢 Easy | `chooseatype` | Jul 23, 2026 |
 | 0073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/submissions/2070349701/) | 🟡 Medium | `chooseatype` | Jul 16, 2026 |
 | 0073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 🟡 Medium | `Python` | Jul 16, 2026 |
@@ -49,4 +49,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Thu, 23 Jul 2026 16:59:23 GMT*
+*Last updated: Thu, 23 Jul 2026 16:59:45 GMT*
