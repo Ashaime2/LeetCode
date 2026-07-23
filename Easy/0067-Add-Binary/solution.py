@@ -1,10 +1,10 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0067. Add Binary
-#  URL      : https://leetcode.com/problems/add-binary/
+#  URL      : https://leetcode.com/problems/add-binary/submissions/2078689585/
 #  Difficulty : Easy
 #  Language : Python
-#  Runtime  : 0 ms
-#  Memory   : 12.3 MB
+#  Runtime  : 14 ms
+#  Memory   : 12.4 MB
 #  Solved   : July 23, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -20,6 +20,14 @@ class Solution(object):
 
         n = len(a)
         m = len(b)
+        
+        if n == 1 and m == 1 :
+            if a == '1' and b == '1' :
+                return '10'
+            elif (a == '1' and b == '0') or (b == '1' and a == '0') :
+                return '1'
+            elif a == '0' and b == '0' :
+                return '0'
 
         if m != n :
             if n > m :
@@ -29,20 +37,21 @@ class Solution(object):
 
         for i in range(len(a)) :
             if retenue == 1 :
-                if int(a[-i]) + int(b[-i]) == 0 :
+                if int(a[-(i+1)]) + int(b[-(i+1)]) == 0 :
                     s = '1' + s
-                elif int(a[-i]) + int(b[-i]) == 1 :
+                    retenue = 0
+                elif int(a[-(i+1)]) + int(b[-(i+1)]) == 1 :
                     retenue = 1
                     s = '0' + s
-                elif int(a[-i]) + int(b[-i]) == 1 :
+                elif int(a[-(i+1)]) + int(b[-(i+1)]) == 2 :
                     retenue = 1
                     s = '1' + s
             else :
-                if int(a[-i]) + int(b[-i]) < 2 :
-                    s = str(int(a[-i] + b[-i])) + s
+                if int(a[-(i+1)]) + int(b[-(i+1)]) < 2 :
+                    s = str(int(a[-(i+1)]) + int(b[-(i+1)])) + s
                 else :
                     retenue = 1
-                s = '0' + s
+                    s = '0' + s
 
         if retenue == 1 :
             s = '1' + s
