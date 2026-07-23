@@ -1,6 +1,6 @@
 // ═══════════════════════════════════════════════════════
 //  Problem  : 0067. Add Binary
-//  URL      : https://leetcode.com/problems/add-binary/
+//  URL      : https://leetcode.com/problems/add-binary/submissions/2078689952/
 //  Difficulty : Easy
 //  Language : chooseatype
 //  Solved   : July 23, 2026
@@ -18,6 +18,14 @@ class Solution(object):
 
         n = len(a)
         m = len(b)
+        
+        if n == 1 and m == 1 :
+            if a == '1' and b == '1' :
+                return '10'
+            elif (a == '1' and b == '0') or (b == '1' and a == '0') :
+                return '1'
+            elif a == '0' and b == '0' :
+                return '0'
 
         if m != n :
             if n > m :
@@ -38,7 +46,7 @@ class Solution(object):
                     s = '1' + s
             else :
                 if int(a[-(i+1)]) + int(b[-(i+1)]) < 2 :
-                    s = str(int(a[-(i+1)] + b[-(i+1)])) + s
+                    s = str(int(a[-(i+1)]) + int(b[-(i+1)])) + s
                 else :
                     retenue = 1
                     s = '0' + s
