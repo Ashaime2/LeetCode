@@ -46,7 +46,7 @@
 | 0066 | [Plus One](https://leetcode.com/problems/plus-one/) | 🟢 Easy | `chooseatype` | Jul 24, 2026 |
 | 0067 | [Add Binary](https://leetcode.com/problems/add-binary/submissions/2078692275/) | 🟢 Easy | `Python` | Jul 23, 2026 |
 | 0067 | [Add Binary](https://leetcode.com/problems/add-binary/submissions/2078692275/) | 🟢 Easy | `chooseatype` | Jul 24, 2026 |
-| 0069 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | 🟢 Easy | `Python` | Jul 24, 2026 |
+| 0069 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/submissions/2079687409/) | 🟢 Easy | `Python` | Jul 24, 2026 |
 | 0069 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | 🟢 Easy | `chooseatype` | Jul 24, 2026 |
 | 0073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/submissions/2070349701/) | 🟡 Medium | `chooseatype` | Jul 16, 2026 |
 | 0073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 🟡 Medium | `Python` | Jul 16, 2026 |
@@ -56,4 +56,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Fri, 24 Jul 2026 14:36:23 GMT*
+*Last updated: Fri, 24 Jul 2026 14:37:18 GMT*
