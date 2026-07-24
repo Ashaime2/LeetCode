@@ -4,9 +4,9 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-38-blue?style=flat-square)
+![Total](https://img.shields.io/badge/Total-39-blue?style=flat-square)
 ![Easy](https://img.shields.io/badge/Easy-21-brightgreen?style=flat-square)
-![Medium](https://img.shields.io/badge/Medium-15-yellow?style=flat-square)
+![Medium](https://img.shields.io/badge/Medium-16-yellow?style=flat-square)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
 
 | # | Problem | Difficulty | Language | Solved |
@@ -40,6 +40,7 @@
 | 0037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/submissions/2070446253/) | 🔴 Hard | `Python` | Jul 17, 2026 |
 | 0037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/submissions/2070446253/) | 🔴 Hard | `chooseatype` | Jul 17, 2026 |
 | 0054 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 🟡 Medium | `Python` | Jul 24, 2026 |
+| 0054 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 🟡 Medium | `chooseatype` | Jul 24, 2026 |
 | 0058 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | 🟢 Easy | `chooseatype` | Jul 24, 2026 |
 | 0067 | [Add Binary](https://leetcode.com/problems/add-binary/submissions/2078692275/) | 🟢 Easy | `Python` | Jul 23, 2026 |
 | 0067 | [Add Binary](https://leetcode.com/problems/add-binary/submissions/2078692275/) | 🟢 Easy | `chooseatype` | Jul 24, 2026 |
@@ -51,4 +52,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Fri, 24 Jul 2026 13:20:16 GMT*
+*Last updated: Fri, 24 Jul 2026 13:29:57 GMT*
