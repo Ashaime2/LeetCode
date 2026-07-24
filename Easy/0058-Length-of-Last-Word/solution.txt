@@ -1,0 +1,24 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0058. Length of Last Word
+//  URL      : https://leetcode.com/problems/length-of-last-word/
+//  Difficulty : Easy
+//  Language : chooseatype
+//  Solved   : July 24, 2026
+// ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def lengthOfLastWord(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        while s[-1] == ' ' :
+            s = s[:-1]
+        
+        compteur = 0 
+        while s[-1] != ' ' :
+            compteur += 1
+            s = s[:-1]
+            if len(s) == 0 :
+                return compteur
+        return compteur
