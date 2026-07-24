@@ -1,9 +1,9 @@
 // ═══════════════════════════════════════════════════════
 //  Problem  : 0067. Add Binary
-//  URL      : https://leetcode.com/problems/add-binary/submissions/2078691041/
+//  URL      : https://leetcode.com/problems/add-binary/submissions/2078692275/
 //  Difficulty : Easy
 //  Language : chooseatype
-//  Solved   : July 23, 2026
+//  Solved   : July 24, 2026
 // ═══════════════════════════════════════════════════════
 
 class Solution(object):
