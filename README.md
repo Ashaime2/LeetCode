@@ -40,7 +40,7 @@
 | 0037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/submissions/2070446253/) | 🔴 Hard | `Python` | Jul 17, 2026 |
 | 0037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/submissions/2070446253/) | 🔴 Hard | `chooseatype` | Jul 17, 2026 |
 | 0054 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/submissions/2079616403/) | 🟡 Medium | `Python` | Jul 24, 2026 |
-| 0054 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 🟡 Medium | `chooseatype` | Jul 24, 2026 |
+| 0054 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/submissions/2079616559/) | 🟡 Medium | `chooseatype` | Jul 24, 2026 |
 | 0058 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | 🟢 Easy | `chooseatype` | Jul 24, 2026 |
 | 0067 | [Add Binary](https://leetcode.com/problems/add-binary/submissions/2078692275/) | 🟢 Easy | `Python` | Jul 23, 2026 |
 | 0067 | [Add Binary](https://leetcode.com/problems/add-binary/submissions/2078692275/) | 🟢 Easy | `chooseatype` | Jul 24, 2026 |
@@ -52,4 +52,4 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 
 ---
-*Last updated: Fri, 24 Jul 2026 13:30:57 GMT*
+*Last updated: Fri, 24 Jul 2026 13:31:18 GMT*
