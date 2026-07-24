@@ -1,6 +1,6 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0054. Spiral Matrix
-#  URL      : https://leetcode.com/problems/spiral-matrix/
+#  URL      : https://leetcode.com/problems/spiral-matrix/submissions/2079616403/
 #  Difficulty : Medium
 #  Language : Python
 #  Runtime  : 0 ms
@@ -27,36 +27,40 @@ class Solution(object):
         proch = (i,j)
         direction = 'd'
 
-        while (i<m) and (j<n) and vus[proch] == 0 :
+        while len(L) < m * n:
             if direction == 'd' :
-                while i < m -1 and vus[(i,j)] == 0 :
-                    L.append(matrix[i][j]) 
-                    vus[(i,j)] = 1
-                    i += 1
-                j += 1
-                proch = (i,j)
-                direction = 'b'
-            elif direction == 'b' :
-                while j < n -1 and vus[(i,j)] == 0 :
+                while j < n and vus[(i,j)] == 0 :
                     L.append(matrix[i][j]) 
                     vus[(i,j)] = 1
                     j += 1
+                i += 1
+                j -= 1
+                proch = (i,j)
+                direction = 'b'
+            elif direction == 'b' :
+                while i < m and vus[(i,j)] == 0 :
+                    L.append(matrix[i][j]) 
+                    vus[(i,j)] = 1
+                    i += 1
+                j -= 1
                 i -= 1
                 proch = (i,j)
                 direction = 'g'
             elif direction == 'g' :
-                while i > 0 and vus[(i,j)] == 0 :
-                    L.append(matrix[i][j]) 
-                    vus[(i,j)] = 1
-                    i -= 1
-                j -= 1
-                proch = (i,j)
-                direction = 'h'
-            if direction == 'h' :
-                while j > 0 and vus[(i,j)] == 0 :
+                while j >= 0 and vus[(i, j)] == 0 :
                     L.append(matrix[i][j]) 
                     vus[(i,j)] = 1
                     j -= 1
+                i -= 1
+                j += 1
+                proch = (i,j)
+                direction = 'h'
+            elif direction == 'h' :
+                while i >= 0 and vus[(i, j)] == 0 :
+                    L.append(matrix[i][j]) 
+                    vus[(i,j)] = 1
+                    i -= 1
+                j += 1
                 i += 1
                 proch = (i,j)
                 direction = 'd'
