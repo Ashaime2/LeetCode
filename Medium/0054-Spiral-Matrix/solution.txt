@@ -1,6 +1,6 @@
 // ═══════════════════════════════════════════════════════
 //  Problem  : 0054. Spiral Matrix
-//  URL      : https://leetcode.com/problems/spiral-matrix/
+//  URL      : https://leetcode.com/problems/spiral-matrix/submissions/2079616559/
 //  Difficulty : Medium
 //  Language : chooseatype
 //  Solved   : July 24, 2026
@@ -25,7 +25,7 @@ class Solution(object):
         proch = (i,j)
         direction = 'd'
 
-        while (i<m) and (j<n) and vus[proch] == 0 :
+        while len(L) < m * n:
             if direction == 'd' :
                 while j < n and vus[(i,j)] == 0 :
                     L.append(matrix[i][j]) 
