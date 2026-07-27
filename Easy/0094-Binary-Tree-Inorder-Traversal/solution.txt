@@ -1,0 +1,22 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0094. Binary Tree Inorder Traversal
+//  URL      : https://leetcode.com/problems/binary-tree-inorder-traversal/submissions/2083606528/
+//  Difficulty : Easy
+//  Language : chooseatype
+//  Solved   : July 27, 2026
+// ═══════════════════════════════════════════════════════
+
+class Solution:
+    def inorderTraversal(self, root):
+        result = []
+
+        def traverse(node):
+            if node is None:
+                return
+
+            traverse(node.left)
+            result.append(node.val)
+            traverse(node.right)
+
+        traverse(root)
+        return result
