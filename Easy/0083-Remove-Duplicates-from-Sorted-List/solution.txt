@@ -17,9 +17,11 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
+        if not head :
+            return head
         if head.next == None :
             return head 
-            
+
         actuel = head
         while actuel.next is not None : 
             if actuel.val == actuel.next.val :
