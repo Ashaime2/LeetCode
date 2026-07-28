@@ -4,9 +4,9 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-47-blue?style=flat-square)
+![Total](https://img.shields.io/badge/Total-48-blue?style=flat-square)
 ![Easy](https://img.shields.io/badge/Easy-29-brightgreen?style=flat-square)
-![Medium](https://img.shields.io/badge/Medium-16-yellow?style=flat-square)
+![Medium](https://img.shields.io/badge/Medium-17-yellow?style=flat-square)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
 
 | # | Problem | Difficulty | Language | Solved |
@@ -58,6 +58,7 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 | 0094 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/submissions/2083606528/) | 🟢 Easy | `chooseatype` | Jul 27, 2026 |
 | 0136 | [Single Number](https://leetcode.com/problems/single-number/) | 🟢 Easy | `chooseatype` | Jul 28, 2026 |
+| 0155 | [Min Stack](https://leetcode.com/problems/min-stack/) | 🟡 Medium | `Python` | Jul 28, 2026 |
 
 ---
-*Last updated: Tue, 28 Jul 2026 16:22:20 GMT*
+*Last updated: Tue, 28 Jul 2026 16:26:19 GMT*
