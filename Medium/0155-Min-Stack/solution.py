@@ -1,10 +1,10 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 0155. Min Stack
-#  URL      : https://leetcode.com/problems/min-stack/
+#  URL      : https://leetcode.com/problems/min-stack/submissions/2085045006/
 #  Difficulty : Medium
 #  Language : Python
-#  Runtime  : 0 ms
-#  Memory   : 12.4 MB
+#  Runtime  : 200 ms
+#  Memory   : 24.9 MB
 #  Solved   : July 28, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -12,39 +12,22 @@ class MinStack(object):
 
     def __init__(self):
         self.liste = []
+        self.minimums = []
 
     def push(self, value):
-        """
-        :type value: int
-        :rtype: None
-        """
         self.liste.append(value)
-        
+
+        if not self.minimums:
+            self.minimums.append(value)
+        else:
+            self.minimums.append(min(value, self.minimums[-1]))
 
     def pop(self):
-        """
-        :rtype: None
-        """
-        self.liste = self.liste[::-1]
-        
+        self.liste.pop()
+        self.minimums.pop()
 
     def top(self):
-        """
-        :rtype: int
-        """
         return self.liste[-1]
-        
 
     def getMin(self):
-        """
-        :rtype: int
-        """
-        return min(self.liste)
-
-
-# Your MinStack object will be instantiated and called as such:
-# obj = MinStack()
-# obj.push(value)
-# obj.pop()
-# param_3 = obj.top()
-# param_4 = obj.getMin()
+        return self.minimums[-1]
