@@ -58,8 +58,8 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 | 0094 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/submissions/2083606528/) | 🟢 Easy | `chooseatype` | Jul 27, 2026 |
 | 0136 | [Single Number](https://leetcode.com/problems/single-number/) | 🟢 Easy | `chooseatype` | Jul 28, 2026 |
-| 0155 | [Min Stack](https://leetcode.com/problems/min-stack/) | 🟡 Medium | `Python` | Jul 28, 2026 |
+| 0155 | [Min Stack](https://leetcode.com/problems/min-stack/submissions/2085045006/) | 🟡 Medium | `Python` | Jul 28, 2026 |
 | 0155 | [Min Stack](https://leetcode.com/problems/min-stack/) | 🟡 Medium | `chooseatype` | Jul 28, 2026 |
 
 ---
-*Last updated: Tue, 28 Jul 2026 16:27:25 GMT*
+*Last updated: Tue, 28 Jul 2026 16:27:50 GMT*
