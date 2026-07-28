@@ -1,0 +1,21 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0136. Single Number
+//  URL      : https://leetcode.com/problems/single-number/
+//  Difficulty : Easy
+//  Language : chooseatype
+//  Solved   : July 28, 2026
+// ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        s = set()
+        for num in nums :
+            if num in s :
+                s.discard(num)
+            else :
+                s.add(num)
+        return next(iter(s))
