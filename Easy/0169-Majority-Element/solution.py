@@ -15,11 +15,13 @@ class Solution(object):
         :rtype: int
         """
         n = len(nums)
+        if n == 1 :
+            return nums[0]
         dico = {}
         for elt in nums :
             if elt not in dico :
                 dico[elt] = 1
             else :
                 dico[elt] += 1
-                if dico[elt] >= floor(n/2) :
+                if dico[elt] > floor(n/2) :
                     return elt
