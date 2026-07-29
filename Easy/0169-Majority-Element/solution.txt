@@ -1,6 +1,6 @@
 // ═══════════════════════════════════════════════════════
 //  Problem  : 0169. Majority Element
-//  URL      : https://leetcode.com/problems/majority-element/
+//  URL      : https://leetcode.com/problems/majority-element/submissions/2086263561/
 //  Difficulty : Easy
 //  Language : chooseatype
 //  Solved   : July 29, 2026
@@ -13,7 +13,8 @@ class Solution(object):
         :rtype: int
         """
         n = len(nums)
-        
+        if n == 1 :
+            return nums[0]
         dico = {}
         for elt in nums :
             if elt not in dico :
