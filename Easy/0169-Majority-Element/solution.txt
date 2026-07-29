@@ -1,0 +1,24 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0169. Majority Element
+//  URL      : https://leetcode.com/problems/majority-element/
+//  Difficulty : Easy
+//  Language : chooseatype
+//  Solved   : July 29, 2026
+// ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def majorityElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n = len(nums)
+        
+        dico = {}
+        for elt in nums :
+            if elt not in dico :
+                dico[elt] = 1
+            else :
+                dico[elt] += 1
+                if dico[elt] > floor(n/2) :
+                    return elt
