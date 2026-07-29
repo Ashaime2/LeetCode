@@ -61,7 +61,7 @@
 | 0155 | [Min Stack](https://leetcode.com/problems/min-stack/submissions/2085045006/) | 🟡 Medium | `Python` | Jul 28, 2026 |
 | 0155 | [Min Stack](https://leetcode.com/problems/min-stack/) | 🟡 Medium | `chooseatype` | Jul 28, 2026 |
 | 0169 | [Majority Element](https://leetcode.com/problems/majority-element/) | 🟢 Easy | `Python` | Jul 29, 2026 |
-| 0169 | [Majority Element](https://leetcode.com/problems/majority-element/) | 🟢 Easy | `chooseatype` | Jul 29, 2026 |
+| 0169 | [Majority Element](https://leetcode.com/problems/majority-element/submissions/2086263561/) | 🟢 Easy | `chooseatype` | Jul 29, 2026 |
 
 ---
-*Last updated: Wed, 29 Jul 2026 14:44:34 GMT*
+*Last updated: Wed, 29 Jul 2026 14:44:49 GMT*
