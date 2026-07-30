@@ -64,7 +64,7 @@
 | 0169 | [Majority Element](https://leetcode.com/problems/majority-element/) | 🟢 Easy | `Python` | Jul 29, 2026 |
 | 0169 | [Majority Element](https://leetcode.com/problems/majority-element/submissions/2086263561/) | 🟢 Easy | `chooseatype` | Jul 29, 2026 |
 | 3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2088084231/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `chooseatype` | Jul 31, 2026 |
-| 3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2088084166/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `Python` | Jul 31, 2026 |
+| 3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2088084352/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `Python` | Jul 31, 2026 |
 
 ---
-*Last updated: Thu, 30 Jul 2026 22:35:56 GMT*
+*Last updated: Thu, 30 Jul 2026 22:36:16 GMT*
