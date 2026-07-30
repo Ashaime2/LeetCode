@@ -4,8 +4,8 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-51-blue?style=flat-square)
-![Easy](https://img.shields.io/badge/Easy-31-brightgreen?style=flat-square)
+![Total](https://img.shields.io/badge/Total-52-blue?style=flat-square)
+![Easy](https://img.shields.io/badge/Easy-32-brightgreen?style=flat-square)
 ![Medium](https://img.shields.io/badge/Medium-18-yellow?style=flat-square)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
 
@@ -60,8 +60,9 @@
 | 0136 | [Single Number](https://leetcode.com/problems/single-number/) | 🟢 Easy | `chooseatype` | Jul 28, 2026 |
 | 0155 | [Min Stack](https://leetcode.com/problems/min-stack/submissions/2085045006/) | 🟡 Medium | `Python` | Jul 28, 2026 |
 | 0155 | [Min Stack](https://leetcode.com/problems/min-stack/) | 🟡 Medium | `chooseatype` | Jul 28, 2026 |
+| 0168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | 🟢 Easy | `chooseatype` | Jul 30, 2026 |
 | 0169 | [Majority Element](https://leetcode.com/problems/majority-element/) | 🟢 Easy | `Python` | Jul 29, 2026 |
 | 0169 | [Majority Element](https://leetcode.com/problems/majority-element/submissions/2086263561/) | 🟢 Easy | `chooseatype` | Jul 29, 2026 |
 
 ---
-*Last updated: Wed, 29 Jul 2026 14:44:49 GMT*
+*Last updated: Thu, 30 Jul 2026 16:50:58 GMT*
