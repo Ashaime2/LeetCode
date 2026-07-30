@@ -1,0 +1,24 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0168. Excel Sheet Column Title
+//  URL      : https://leetcode.com/problems/excel-sheet-column-title/
+//  Difficulty : Easy
+//  Language : chooseatype
+//  Solved   : July 30, 2026
+// ═══════════════════════════════════════════════════════
+
+class Solution(object):
+    def convertToTitle(self, columnNumber):
+        """
+        :type columnNumber: int
+        :rtype: str
+        """
+        dico = {i: chr(65 + i) for i in range(26)}
+        string = ''
+
+        while columnNumber > 0:
+            columnNumber -= 1
+            reste = columnNumber%26
+            string = dico[reste] + string
+            columnNumber //=  26
+        
+        return string
