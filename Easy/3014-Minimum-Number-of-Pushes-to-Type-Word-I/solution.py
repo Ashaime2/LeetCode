@@ -1,10 +1,10 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 3014. Minimum Number of Pushes to Type Word I
-#  URL      : https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2088084166/?envType=daily-question&envId=2026-07-30
+#  URL      : https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2088084352/?envType=daily-question&envId=2026-07-30
 #  Difficulty : Easy
 #  Language : Python
 #  Runtime  : 0 ms
-#  Memory   : 12.3 MB
+#  Memory   : 12.5 MB
 #  Solved   : July 31, 2026
 # ═══════════════════════════════════════════════════════
 
