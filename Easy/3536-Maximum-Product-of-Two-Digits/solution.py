@@ -1,9 +1,9 @@
 # ═══════════════════════════════════════════════════════
 #  Problem  : 3536. Maximum Product of Two Digits
-#  URL      : https://leetcode.com/problems/maximum-product-of-two-digits/?envType=daily-question&envId=2026-07-30
+#  URL      : https://leetcode.com/problems/maximum-product-of-two-digits/submissions/2088754951/?envType=daily-question&envId=2026-07-30
 #  Difficulty : Easy
 #  Language : Python
-#  Runtime  : 0 ms
+#  Runtime  : 1 ms
 #  Memory   : 12.3 MB
 #  Solved   : July 31, 2026
 # ═══════════════════════════════════════════════════════
@@ -22,7 +22,7 @@ class Solution(object):
             if new >= a :
                 b = a
                 a = new
-            if b < new <= a :
+            elif new > b :
                 b = new
         return a*b
 
