@@ -4,7 +4,7 @@
 #  Difficulty : Easy
 #  Language : Python
 #  Runtime  : 0 ms
-#  Memory   : 12.3 MB
+#  Memory   : 12.4 MB
 #  Solved   : July 31, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -18,8 +18,12 @@ class Solution(object):
         a, b = 0, 0
 
         for char in n :
-            a = min(char, a)
-            b = max(char, b)
+            new = int(char)
+            if new > max(a, b) :
+                b = a
+                a = new
+            if b < new <= a :
+                b = new
         return a*b
 
         
