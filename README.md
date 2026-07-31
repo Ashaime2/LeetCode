@@ -65,8 +65,8 @@
 | 0169 | [Majority Element](https://leetcode.com/problems/majority-element/submissions/2086263561/) | 🟢 Easy | `chooseatype` | Jul 29, 2026 |
 | 3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2088084352/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `chooseatype` | Jul 31, 2026 |
 | 3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2088084352/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `Python` | Jul 31, 2026 |
-| 3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/submissions/2088745825/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `Python` | Jul 31, 2026 |
+| 3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `Python` | Jul 31, 2026 |
 | 3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/submissions/2088746044/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `chooseatype` | Jul 31, 2026 |
 
 ---
-*Last updated: Fri, 31 Jul 2026 11:41:40 GMT*
+*Last updated: Fri, 31 Jul 2026 11:46:46 GMT*
