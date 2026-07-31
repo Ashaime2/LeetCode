@@ -4,7 +4,7 @@
 #  Difficulty : Easy
 #  Language : Python
 #  Runtime  : 0 ms
-#  Memory   : 12.4 MB
+#  Memory   : 12.3 MB
 #  Solved   : July 31, 2026
 # ═══════════════════════════════════════════════════════
 
@@ -19,7 +19,7 @@ class Solution(object):
 
         for char in n :
             new = int(char)
-            if new > max(a, b) :
+            if new >= a :
                 b = a
                 a = new
             if b < new <= a :
