@@ -4,8 +4,8 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-54-blue?style=flat-square)
-![Easy](https://img.shields.io/badge/Easy-34-brightgreen?style=flat-square)
+![Total](https://img.shields.io/badge/Total-55-blue?style=flat-square)
+![Easy](https://img.shields.io/badge/Easy-35-brightgreen?style=flat-square)
 ![Medium](https://img.shields.io/badge/Medium-18-yellow?style=flat-square)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
 
@@ -65,6 +65,7 @@
 | 0169 | [Majority Element](https://leetcode.com/problems/majority-element/submissions/2086263561/) | 🟢 Easy | `chooseatype` | Jul 29, 2026 |
 | 3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2088084352/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `chooseatype` | Jul 31, 2026 |
 | 3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2088084352/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `Python` | Jul 31, 2026 |
+| 3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `Python` | Jul 31, 2026 |
 
 ---
-*Last updated: Fri, 31 Jul 2026 11:33:43 GMT*
+*Last updated: Fri, 31 Jul 2026 11:39:12 GMT*
