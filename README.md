@@ -4,8 +4,8 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-56-blue?style=flat-square)
-![Easy](https://img.shields.io/badge/Easy-36-brightgreen?style=flat-square)
+![Total](https://img.shields.io/badge/Total-57-blue?style=flat-square)
+![Easy](https://img.shields.io/badge/Easy-37-brightgreen?style=flat-square)
 ![Medium](https://img.shields.io/badge/Medium-18-yellow?style=flat-square)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
 
@@ -63,10 +63,11 @@
 | 0168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | 🟢 Easy | `chooseatype` | Jul 30, 2026 |
 | 0169 | [Majority Element](https://leetcode.com/problems/majority-element/) | 🟢 Easy | `Python` | Jul 29, 2026 |
 | 0169 | [Majority Element](https://leetcode.com/problems/majority-element/submissions/2086263561/) | 🟢 Easy | `chooseatype` | Jul 29, 2026 |
+| 0628 | [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/submissions/2095483630/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `chooseatype` | Aug 5, 2026 |
 | 3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2088084352/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `chooseatype` | Jul 31, 2026 |
 | 3014 | [Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2088084352/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `Python` | Jul 31, 2026 |
 | 3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/submissions/2088754951/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `Python` | Jul 31, 2026 |
 | 3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/submissions/2088755210/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `chooseatype` | Jul 31, 2026 |
 
 ---
-*Last updated: Fri, 31 Jul 2026 11:54:01 GMT*
+*Last updated: Wed, 05 Aug 2026 15:07:29 GMT*
