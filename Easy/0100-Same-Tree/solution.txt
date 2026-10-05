@@ -1,0 +1,21 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0100. Same Tree
+//  URL      : https://leetcode.com/problems/same-tree/submissions/2163255344/
+//  Difficulty : Easy
+//  Language : chooseatype
+//  Solved   : October 5, 2026
+// ═══════════════════════════════════════════════════════
+
+class Solution:
+    def isSameTree(self, p, q):
+        if p is None and q is None:
+            return True
+
+        if p is None or q is None:
+            return False
+
+        return (
+            p.val == q.val
+            and self.isSameTree(p.left, q.left)
+            and self.isSameTree(p.right, q.right)
+        )
