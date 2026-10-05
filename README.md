@@ -4,8 +4,8 @@
 
 ## 📊 Progress
 
-![Total](https://img.shields.io/badge/Total-57-blue?style=flat-square)
-![Easy](https://img.shields.io/badge/Easy-37-brightgreen?style=flat-square)
+![Total](https://img.shields.io/badge/Total-58-blue?style=flat-square)
+![Easy](https://img.shields.io/badge/Easy-38-brightgreen?style=flat-square)
 ![Medium](https://img.shields.io/badge/Medium-18-yellow?style=flat-square)
 ![Hard](https://img.shields.io/badge/Hard-2-red?style=flat-square)
 
@@ -57,6 +57,7 @@
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `chooseatype` | Jul 16, 2026 |
 | 0088 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/submissions/2070217475/) | 🟢 Easy | `Python` | Jul 16, 2026 |
 | 0094 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/submissions/2083606528/) | 🟢 Easy | `chooseatype` | Jul 27, 2026 |
+| 0100 | [Same Tree](https://leetcode.com/problems/same-tree/submissions/2163255344/) | 🟢 Easy | `chooseatype` | Oct 5, 2026 |
 | 0136 | [Single Number](https://leetcode.com/problems/single-number/) | 🟢 Easy | `chooseatype` | Jul 28, 2026 |
 | 0155 | [Min Stack](https://leetcode.com/problems/min-stack/submissions/2085045006/) | 🟡 Medium | `Python` | Jul 28, 2026 |
 | 0155 | [Min Stack](https://leetcode.com/problems/min-stack/) | 🟡 Medium | `chooseatype` | Jul 28, 2026 |
@@ -70,4 +71,4 @@
 | 3536 | [Maximum Product of Two Digits](https://leetcode.com/problems/maximum-product-of-two-digits/submissions/2088755210/?envType=daily-question&envId=2026-07-30) | 🟢 Easy | `chooseatype` | Jul 31, 2026 |
 
 ---
-*Last updated: Wed, 05 Aug 2026 15:07:29 GMT*
+*Last updated: Mon, 05 Oct 2026 15:06:43 GMT*
