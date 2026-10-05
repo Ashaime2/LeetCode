@@ -1,0 +1,29 @@
+// ═══════════════════════════════════════════════════════
+//  Problem  : 0101. Symmetric Tree
+//  URL      : https://leetcode.com/problems/symmetric-tree/submissions/2163263231/
+//  Difficulty : Easy
+//  Language : chooseatype
+//  Solved   : October 5, 2026
+// ═══════════════════════════════════════════════════════
+
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def isSymmetric(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: bool
+        """
+        def sym(L,R) :
+            if L is None and R is None :
+                return True
+            if L is None or R is None :
+                return False
+            return((L.val == R.val) and sym(L.left, R.right) and sym(L.right,R.left))
+        return sym(root.left,root.right)
+
+        
